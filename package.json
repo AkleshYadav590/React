@@ -2,7 +2,6 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "Aklesh was Here!!",
-  "main": "Script.js",
   "scripts": {
     "test": "Jest"
   },
@@ -10,10 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/AkleshYadav590/React.git"
   },
-  "keywords": [
-    "React",
-    "Aklesh"
-  ],
+  "keywords": [],
   "author": "Akhilesh Yadav",
   "license": "ISC",
   "bugs": {
@@ -22,5 +18,13 @@
   "homepage": "https://github.com/AkleshYadav590/React#readme",
   "devDependencies": {
     "parcel": "^2.16.1"
-  }
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "browserslist":[    
+    "last 2 versions"
+]
+  
 }
