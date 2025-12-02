@@ -1,14 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+ 
 
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {id:"child1"}, "Aklesh Yadav Was "),
-    React.createElement("h2", {id:"child2"}, "I'm H2 Tag"),
-  ])
-);
+const Heading = ()=> 
+(
+<div>
+<h1>
+Namaste react 🚀🚀
+</h1>
+</div>
+)
+ const Button=()=>(
+    <button onClick={alert} >Hello</button>
+ )
+
+const  ReactComponent= () => (
+<div>
+    <Heading/>
+<h1 id="parent"> ReactComponent mode </h1>
+<Button/>
+</div>
+)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<ReactComponent/>);

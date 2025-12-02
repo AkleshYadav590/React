@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Aklesh was Here!!",
   "scripts": {
+    "start":"parcel Index.html",
+    "build":"parcel build Index.html",
     "test": "Jest"
   },
   "repository": {
