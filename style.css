@@ -16,6 +16,9 @@ body {
   padding: 12px 20px;
   border-bottom: 2px solid var(--border-color);
   background: #fff;
+  border: 2px solid gray;
+  border-radius: 45px;
+  margin-bottom: 9px;
 }
 
 .logo {
@@ -42,23 +45,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* ================================
-   SEARCH BAR
-================================ */
-.search {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.search input {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #aaa;
-  border-radius: 6px;
-  font-size: 16px;
-}
 
 /* ================================
    RESTAURANT CARD CONTAINER
@@ -76,12 +62,13 @@ body {
    RESTAURANT CARD
 ================================ */
 .Res-Card {
+  border-radius: 9px;
   padding: 2px;
   margin: 2px;
   width: 280px;
   padding: 10px;
   background: var(--card-bg);
-  border: 1px solid grey;
+  border: 2px solid grey;
   transition: 0.3s ease-in-out;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
@@ -103,6 +90,90 @@ body {
 /* Restaurant text */
 .restroName {
   margin-top: 8px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
 }
+
+
+
+.Shimmer-Container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.Shimmer-Cards {
+  margin-left: 9px;
+  width: 280px;
+  height: 300px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    #dfdddd 25%,
+    #c0bebe 37%,
+    #a19d9d 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.Loginbtn{
+   padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background:#f82d2d;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+/* Search section */
+
+.Search-Bar {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 99px;
+  border: 1px solid #0f0f0f;
+  margin-left: 8px;
+
+}
+
+
+
+/* Buttons */
+.SearchBtn,
+.Filter-Btn {
+  margin-left: 5px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #f97316;
+  color: white;
+  transition: 0.2s ease;
+  
+  
+}
+.Filter-Btn{
+  margin-left: 5px;
+}
+
+.SearchBtn:hover,
+.Filter-Btn:hover {
+  background-color: #0d0d0e;
+}
+
+
