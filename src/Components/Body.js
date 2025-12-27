@@ -24,13 +24,13 @@ const Body = () => {
 
     const json = await res.json();
 
-    const restaurants =json?.data?.cards?.
-    find(card =>card?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    ?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+    const Restaurant=json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+
+
 
 //Using Both to contain Restraunts,Later Used In Search Function 
-    setrestroList(restaurants);
-    setFilteredRestro(restaurants);
+    setrestroList(Restaurant);
+    setFilteredRestro(Restaurant);
   };
  
 //Until Api Call Is Made And We Have The Data Shimmer IS There Working As Fake Data Body
